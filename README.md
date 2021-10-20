@@ -1,6 +1,6 @@
-# R Lesson
+# RDataAnalysis_TKU_2021Fall
 
-12345
+2021Fall TKU R網頁資料擷取與分析
 
 ## 核心能力
 

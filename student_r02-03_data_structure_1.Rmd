@@ -30,16 +30,22 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r}
 
 # Vector of strings
-
-
+fruits<-c ("banana", "apple", "orange")
+class(fruits) 
+typeof(fruits)
 # Vector of numerical values
-
+numbers<-c(1, 2, 3)
+class(numbers)
+typeof(numbers)
 
 # Vector of logical values
-
-
+log_values <-c(TRUE, FALSE, TRUE, FALSE)
+class(log_values)
+typeof(log_values)
 # vector內 不是同資料型態時
-
+tmp1 <-c (1,  "2")
+tmp2 <- c (1, TRUE)
+tmp3 <- c ("3", 3)
 
 ```
 
@@ -172,12 +178,15 @@ list_1 <- list(
 
 ### 練習1
 ```{r}
-
+list_1 <- list(
+  c ("black", "yellow", "orange"),
+  c(T, T, F, T, F, F),
+  "5"
+)
 # Q1: 創建一向量 vec_1，其有 10至100 的整數
-
-
+vec_1 <- c(10:100)
 # Q2: 查看向量 vec_1 之長度
-
+length(vec_1)
 
 ```
 
@@ -188,13 +197,13 @@ list_1 <- list(
 fruits <- c("banana", "apple", "orange", "mango", "lemon")
 
 # Q1: 取出 fruits 索引值 1 位置之元素
-
+fruits[1]
 
 # Q2: 取出 fruits 索引值 2-4 位置之元素
-
+fruits[2:4]
 
 # Q3: 將 fruits 做排序
-
+sort(fruits)
 
 ```
 
@@ -204,10 +213,11 @@ repeat_each <- rep(c(1,2,3), each = 3)
 
 
 # Q1: 將 repeat_each 專為 factor型態，存於 factor_1 變數
-
+factor_1 <- factor(repeat_each)
 
 
 # Q2 查看 factor_1 之 levels
+levels(factor_1)
 
 
 ```
